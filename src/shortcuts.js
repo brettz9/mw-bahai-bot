@@ -16,6 +16,11 @@ const {document} = new JSDOM.JSDOM(html).window;
 global.document = document;
 
 const alasql = (await import('alasql')).default;
+
+// Todo: Adapt https://github.com/AlaSQL/alasql/blob/develop/src/84from.js#L42-L89
+//          so as to support querying URLs and doing joins?
+// See https://github.com/AlaSQL/alasql/wiki/User-Defined-Functions
+// https://github.com/AlaSQL/alasql/wiki/Html
 alasql.from.MYFUN = (a) => {
   console.log('11111112', a);
 };
