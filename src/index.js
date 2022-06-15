@@ -9,7 +9,6 @@ const bot = new MWBot({
   verbose: true
 });
 
-(async () => {
 try {
   const resp = await bot.loginGetEditToken({
     apiUrl,
@@ -25,4 +24,3 @@ try {
 } catch (err) {
   console.log('err', err);
 }
-})();
