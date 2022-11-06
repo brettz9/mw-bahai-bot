@@ -1,5 +1,7 @@
 /* eslint-disable no-console -- CLI */
 
+// Todo: Generate shortcut pages on each relevant server
+
 import fetch from 'node-fetch';
 import JSDOM from 'jsdom';
 
